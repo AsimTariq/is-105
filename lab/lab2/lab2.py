@@ -41,5 +41,8 @@ print """
 #    bitAnd - x&y
 #    Eksempel: bitAnd(6, 5) = 4
 #
-def bitAnd(x, y):
-  return 2
+x=2
+y=2
+def bitAnd (x,y):
+	return x&y
+print bitAnd(x,y)
