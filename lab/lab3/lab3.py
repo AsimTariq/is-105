@@ -35,7 +35,18 @@ gruppe = {  'Oddvar': '-', \
 #      3 c
 #
 # Din funksjonsimplementering skrives her ...
+print "\n";
 
+print "implementerer fra test1.py \n";
+subprocess.call('./test1.py')
+print "\n";
+
+print "implementerer fra test1.sh \n";
+subprocess.call('./test1.sh')
+print "\n";
+
+print "implementerer fra test1.pl \n";
+subprocess.call('./test1.pl')
 
 
 #
@@ -47,10 +58,19 @@ gruppe = {  'Oddvar': '-', \
 #    lim inn her som kommentar.
 #
 def min_sys_info():
-	"""
-	Her er mitt resultat av kjøringen av denne funksjonen:
-   
-	"""
+#	
+#	Her er mitt resultat av kjøringen av denne funksjonen:
+#byteorder: little
+# os data: 
+# ('Linux', 'Halhjem', '2.6.32-431.3.1.el6.x86_64', '#1 SMP Fri Jan 3 21:39:27 UTC 2014', 'x86_64')
+# os bruker: Tore
+# ----- initialer() -----
+# 2
+# ----- infix_to_prefix() -----
+# 2
+# ----- lab3_scripts() -----
+
+
 	print "byteorder: " + sys.byteorder
 	print "os data: "
 	print os.uname()
@@ -72,8 +92,8 @@ def min_sys_info():
 #    
 #    Anta at inn-data er korrekt (ingen testing nødvendig)
 #
-def initialer(navn):
-	return 2
+def initialer("Oddvar Tengesdal");	
+    return initialer
 
 #
 #  Oppgave 4
