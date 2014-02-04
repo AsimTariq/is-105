@@ -86,9 +86,9 @@ print bitOR(x,y)
 #      08 formatterer tall til 8 tegn og fuller med nuller til venstre hvis nødvendig
 #      b konverterer tallet til dets binære representasjon
 def ascii8Bin(a):
-    bokstav=(a)
-    return  bokstavvalg='{0:08b}'.format(bokstav)
-
-print ascii8Bin(a)
+    bokstav=ord(a)
+    bokstavvalg="{0:08b}".format(bokstav)
+    print (bokstavvalg)
+ascii8Bin("a")
 
 #
