@@ -13,9 +13,9 @@ import subprocess
 import re
 
 # Skriv inn fullt navn på gruppemedlemene (erstatte '-' med navn slikt 'Kari Trå')
-gruppe = {  'student1': '-', \
-			'student2': '-', \
-            'student3': '-', \
+gruppe = {  'Oddvar': '-', \
+			'Erik': '-', \
+            'Tore Ande': '-', \
 }
 
 #
