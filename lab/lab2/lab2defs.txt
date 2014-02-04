@@ -1,0 +1,218 @@
+﻿operatør prioritet in Python
+
+(http://docs.python.org/2/reference/expressions.html#operator­precedence)
+
+
+
+
+
+LAMBDA: Funksjonen lager anonyme funksjoner, det vil si funksjoner som ikke er bundet til navn. Den utfører det samme som en normal funksjon.
+
+
+
+
+
+IF/ELSE: If funksjonen kjører gjennom variabelen. Om variabelen (x) for eksempel er 100, kan du skrive at:
+
+IF >100, så skrives det ut en hendelse om IF er større enn 100. Eller du kan skrive ELSE, som velger å skrive ut en hendelse om ikke den er større.
+
+
+
+
+
+OR: “or” brukes når du vil kjøre en handling hvis en av to variabler ikke er null. Hvis begge variablene er null blir utrykket FALSE. Men hvis en av variablene har en verdi blir utrykket TRUE.
+
+
+
+
+
+AND: And funksjonen brukes i boolean. Vi kan ta utgangspunktet at verdien skal være FALSE. Viser med et eksempel:
+
+IF x and y er utrykket. Om  x er FALSE, returnerer den er verdi. Om x ikke blir vurdert, vil y bli evaluert og returnere en verdi.
+
+
+
+
+
+NOT: “not” brukes når du vil ha det motsatte av det tilstanden i en funksjon viser.
+
+Eksempel: Hvis a eller b er FALSE, vil “not” operatøren gjøre denne om til TRUE.
+
+
+
+
+
+In, not in, is, is not: Brukes for eksempel i liste:
+
+Om du har en varibaler der A=10 og, og en liste med tallene 1 til 5.
+
+Du kan kjøre: 
+
+if A in list, skriver den ut at 10 ikke er i listen mellom 1-5.
+
+Du kan også kjøre en not in, skriver den ut at den ikke er i listen.
+
+Det samme gjelder for is og is not. Om A is B, printer den ut i dette eksempelet at den ikke er det. Velger du om A is not B, printer den ut at den ikke heller ikke er det.
+
+
+
+
+
+| (Bitwise OR): | kopierer en bit hvis den finnes enten i a eller i b.
+
+
+
+
+
+Eksempel: Hvis vi antar at:
+
+
+
+a=60 som blir 0011 1100
+
+b=13 som blir 0000 1101
+
+c=0
+
+c = a | b;
+
+som blir 61 fordi 61 er 0011 1101, så derfor blir c=61.
+
+
+
+
+
+^(Bitwise XOR)
+
+
+
+Tar to biter med like lang kode og utfører den logiske eksklusive OR på de to tilsvarende bitene.
+
+
+
+
+
+            0101 (decimal 5)
+
+XOR      0011 (decimal 3)
+
+       =  0110 (decimal 6)
+
+&(Bitwise AND)
+
+
+
+Tar to biter med like lang kode og utfører den logiske ekslusive AND på de to tilsvarende bitene.
+
+
+
+         0101 (decimal 5)
+
+AND   0011 (decimal 3)
+
+      = 0001 (decimal 1)
+
+<<,>>(Shift)
+
+
+
+Shift “forflytter” bitene i et register, når et tall blir “shifted out” av biten kommer, blir det samme tallet “shiften in” på den andre siden.
+
+ LEFT-SHIFT    00010111 (decimal +23)
+
+                  =  00101110 (decimal +46)
+
+
+
+
+
+RIGHT-SHIFT   10010111 (decimal −105)
+
+                  =  11001011 (decimal −53)
+
+
+
+
+
++ (Addition)
+
+Addition (pluss) legger sammen/plusser variablene. Om du har variabel a=10 og b=10, vil den skive ut 20.
+
+
+
+- (Subtraction)
+
+Subtraction (minus) trekker en variabel til en annen variabel. Om du har a=10 og b=20, og du tar a - b som 
+
+et eksempel blir svaret a - b = 10.
+
+
+
+* (Multiplication)
+
+Multipication(multiplikasjon) ganger sammen varablene. Samme forklaring som på pluss og minus.
+
+
+/ (Division)
+
+Division (Dele) deler de to variablene på hverandre. Hvis du har a=10 og b=100 og bruker et eksempel som a/b, blir svaret 10.
+
+
+% (Remainder)
+
+Deler venstre tall på høyre verdi - og printer ut restverdi
+
+
+
+** (Exponentiation)
+
+Legger power calculation på operator 
+
+
+x[Index] (Subscription)
+
+Et “Subscription” velger et element av en sekvens ( streng , tuppel eller liste ) eller kartlegging.
+
+
+
+x[Index:Index] (Slicing)
+
+Slicing velger en rekkevidde av objekter i et sekvensobjekt. Slicings kan bli brukt som utrykk eller som mål i oppdrag eller del statements.
+
+x(arguments…) (Call)
+
+“Call” er når du kaller opp en funksjon som kan kalles på. 
+
+
+
+x.attribute (Attribute refrence)
+
+Attribute refrence er en primær fulgt av et punktum og et navn. Navnet bak attribute refrence blir spurt om å produsere en attributt som stemmer med navnet på identifieren.
+
+
+(expressions…) (Binding or tuple display)
+
+En parentes angitte expression liste avkastning uansett at uttrykket liste gir: hvis listen inneholder minst ett komma, gir det en tuppel, ellers gir det enkelt uttrykk som utgjør uttrykket listen.
+
+Bindings er lokale variabler 
+
+[expressions…] (List display)
+
+“List display” lister opp en tom rekke med utrykker som er satt i hakeparantes.
+
+
+{key:value…} (Dictionary display)
+
+Tastetypen bør være hashable, noe som utelukker alle objekter som kan forandres
+
+
+`expressions…` (String conversion)
+
+En “String” er et utrykk som leser utrykksliste i revers (aka, bakover).
+
+ 
+
+
+I one complement et negativt nummer er representert ved  ta all bits i det positive nummer, og konvertere dem slik at 0 blir 1, og 1 blir 0. 
+
+I to complement du starter ved one complement, men legger 1 til resultatet.

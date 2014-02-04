@@ -92,3 +92,28 @@ def ascii8Bin(a):
 ascii8Bin("a")
 
 #
+# Oppgave 7
+# transferBin - ta en tilfeldig streng som argument og skriver ut en blokk av 8-bits strenger
+# som er den binære representasjon av strengen
+# Eksempel: transferBin("Hi") skriver ut:
+# 01001000
+# 01101001
+#
+
+# skriv ut den binære representasjon av hvert tegn (bruk ascii8Bin funksjonen din)
+
+#
+# Oppgave 8
+# transferHex - gjør det samme som transferBin, bare skriver ut representasjonen
+# av strengen heksadesimalt (bruk formattering forklart i Oppgave 6)
+# Skriv gjerne en støttefunksjon ascii2Hex, som representerer et tegn
+# med 2 heksadesimale tegn
+
+def ascii2hex(x):
+    ting=ord(x)
+    ascii2x= "{0:02x}".format(ting)
+    print (ascii2x)
+ascii8Bin("x")
+
+
+#
