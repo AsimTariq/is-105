@@ -92,9 +92,9 @@ def min_sys_info():
 #    
 #    Anta at inn-data er korrekt (ingen testing nødvendig)
 #
-def initialer("Oddvar Tengesdal");	
-    return initialer
-
+def initialer(navn):
+    var = re.findall("[A-Z]", navn)
+    return var
 #
 #  Oppgave 4
 #    Ditt første møte med regulære uttrykk i Python (Perl stil)
@@ -115,7 +115,8 @@ def initialer("Oddvar Tengesdal");
 #    operander (to tall) og en operatør (+, for eksempel).
 #
 def infix_to_prefix(infix):
-	return 2
+        r = re.findall(r"[+*\-\/]",infix)+re.findall(r"[0-9+",infix)
+	return ' '.join(r)
 
 
 # Kaller opp implementerte funksjoner (pseudo-testing)
@@ -130,13 +131,13 @@ print min_sys_info.__doc__
 min_sys_info()
 
 print 5*"-" + " initialer() " + 5*"-"
-print initialer("Wolfgang Goethe")
+print initialer("Oddvar Tengesdal")
 
 print 5*"-" + " infix_to_prefix() " + 5*"-"
-print infix_to_prefix("2/3")
+print infix_to_prefix("5+1")
 
 # Kalle opp din lab3_scripts() funksjon her
 print 5*"-" + " lab3_scripts() " + 5*"-"
-
+lab3_scripts()
 
 
