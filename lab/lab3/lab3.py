@@ -35,19 +35,12 @@ gruppe = {  'Oddvar': '-', \
 #      3 c
 #
 # Din funksjonsimplementering skrives her ...
-print "\n";
-
-print "implementerer fra test1.py \n";
-subprocess.call('./test1.py')
-print "\n";
-
-print "implementerer fra test1.sh \n";
-subprocess.call('./test1.sh')
-print "\n";
-
-print "implementerer fra test1.pl \n";
-subprocess.call('./test1.pl')
-
+def lab3_scripts():
+    import subprocess
+    subprocess.call('./test1.py')
+    subprocess.call('./test1.sh')
+    subprocess.call('./test1.pl')
+    print lab3_scripts()
 
 #
 #  Oppgave 2
@@ -115,9 +108,10 @@ def initialer(navn):
 #    operander (to tall) og en operatør (+, for eksempel).
 #
 def infix_to_prefix(infix):
-        r = re.findall(r"[+*\-\/]",infix)+re.findall(r"[0-9+",infix)
-	return ' '.join(r)
-
+    operander = re.findall(r"[0-9]+", infix) # Hente ut operander
+    operator = re.findall(r"[+*\-\/]", infix) # Finne operator (+*-/)
+    resultat = operator[0] + " " + operander[0] + " " + operander[1]
+    return resultat
 
 # Kaller opp implementerte funksjoner (pseudo-testing)
 # For å teste innleveringen
@@ -134,7 +128,7 @@ print 5*"-" + " initialer() " + 5*"-"
 print initialer("Oddvar Tengesdal")
 
 print 5*"-" + " infix_to_prefix() " + 5*"-"
-print infix_to_prefix("5+1")
+print infix_to_prefix("2/3")
 
 # Kalle opp din lab3_scripts() funksjon her
 print 5*"-" + " lab3_scripts() " + 5*"-"
