@@ -51,7 +51,7 @@ def psutils_use():
     altsammen=zip (etiketter, verdier)	# Slår de sammen i en liste
 
     for element in altsammen:
-        print altsammen
+       
         print "{} = {}".format(element[0], element[1])
  #index 0 inneholder etikett, index 1 er selve dataene.	
 psutils_use()
