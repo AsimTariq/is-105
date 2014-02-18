@@ -14,9 +14,9 @@ import re
 import psutil # Kan installeres med "pip2.7 install psutil"
 
 # Skriv inn fullt navn på gruppemedlemene (erstatte '-' med navn slikt 'Kari Trå')
-gruppe = {  'student1': '-', \
-			'student2': '-', \
-            'student3': '-', \
+gruppe = {  'Student 1': 'Erik Mikalsen', \
+			'Student 2': 'Oddvar Tengesdal', \
+            'Student 3': 'Tore Andre Halhjem', \
 }
 
 # Oppgave 1
@@ -35,13 +35,25 @@ gruppe = {  'student1': '-', \
 #		steal = 0.00
 #		guest = 0.00
 #
-def psutils_use():
-	"""
-	Henter lister med systeminformasjon fra /proc og bearbeider disse
-	"""
+#def psutils_use():
+#	"""
+#	Henter lister med systeminformasjon fra /proc og bearbeider disse
+#	"""
 	# Impleementer funksjonen her
+def psutils_use():
+    """
+    Henter lister med systeminformasjon fra /proc og bearbeider disse
+    """
+# Impleementer funksjonen her
+    cputider=psutil.cpu_times()	# Lagrer resultat i cputider variabelen
+    etiketter=cputider._fields	# Henter ut etikettene: user, nice osv.
+    verdier=tuple(cputider)	# Henter ut verdiene: 3088.16, 0.99 osv.
+    altsammen=zip (etiketter, verdier)	# Slår de sammen i en liste
 
-	
+    for element in altsammen:
+        print altsammen
+        print "{} = {}".format(element[0], element[1])
+ #index 0 inneholder etikett, index 1 er selve dataene.	
 psutils_use()
 
 
@@ -59,11 +71,11 @@ psutils_use()
 #		Ruby ble startet 1991 av Yukihiro "Matz" Matsumoto.
 #		Go/golang ble startet 2007 av Robert Griesemer, Rob Pike, and Ken Thompson.
 #			
-def print_history(proglangs):
+#def print_history(proglangs):
 	# Implementer funksjonen her
 
-proglangs = [('Python', '1989', 'Guido van Rossum'), ('C', '1969', 'Dennis Ritchie'), ('Java/Oak', '1991', 'James Gosling'), ('C++', '1979', 'Bjarne Stroustrup'), ('Ruby', '1991', 'Yukihiro "Matz" Matsumoto'), ('Perl', '1987' , 'Larry Wall'), ('Go/golang', '2007', 'Robert Griesemer, Rob Pike, and Ken Thompson')]
-print_history(proglangs)
+#proglangs = [('Python', '1989', 'Guido van Rossum'), ('C', '1969', 'Dennis Ritchie'), ('Java/Oak', '1991', 'James Gosling'), ('C++', '1979', 'Bjarne Stroustrup'), ('Ruby', '1991', 'Yukihiro "Matz" Matsumoto'), ('Perl', '1987' , 'Larry Wall'), ('Go/golang', '2007', 'Robert Griesemer, Rob Pike, and Ken Thompson')]
+#print_history(proglangs)
 
 
 # Standardkall for evalueringen
