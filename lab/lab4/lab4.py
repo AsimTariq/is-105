@@ -74,7 +74,7 @@ proglangs = [('Python', '1989', 'Guido van Rossum'), ('C', '1969', 'Dennis Ritch
 
 def print_history(proglangs):
 	# Implementer funksjonen her
-
+    
 
 
 #print_history(proglangs)
