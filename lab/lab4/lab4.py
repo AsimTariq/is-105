@@ -74,10 +74,12 @@ proglangs = [('Python', '1989', 'Guido van Rossum'), ('C', '1969', 'Dennis Ritch
 
 def print_history(proglangs):
 	# Implementer funksjonen her
+        proglangs_sortert=sorted(proglangs, key=lambda proglangs_sortert: proglangs_sortert[1])		#sorter tuples basert på posisjonen som holder årstall
+	for oppforing in proglangs_sortert:
+		print "{} ble startet {} av {}.".format(oppforing[0], oppforing[1], oppforing[2])
 
 
-
-#print_history(proglangs)
+print_history(proglangs)
 
 
 # Standardkall for evalueringen
