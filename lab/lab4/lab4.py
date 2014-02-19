@@ -59,22 +59,24 @@ psutils_use()
 
 # Oppgave 2
 #	Gitt følgende liste (inn-data):
-# 	proglangs = [('Python', '1989', 'Guido van Rossum'), ('C', '1969', 'Dennis Ritchie'), ('Java/Oak', '1991', 'James Gosling'), ('C++', '1979', 'Bjarne Stroustrup'), ('Ruby', '1991', 'Yukihiro "Matz" Matsumoto'), ('Perl', '1987' , 'Larry Wall'), ('Go/golang', '2007', 'Robert Griesemer, Rob Pike, and Ken Thompson')]
+proglangs = [('Python', '1989', 'Guido van Rossum'), ('C', '1969', 'Dennis Ritchie'), ('Java/Oak', '1991', 'James Gosling'), ('C++', '1979', 'Bjarne Stroustrup'), ('Ruby', '1991', 'Yukihiro "Matz" Matsumoto'), ('Perl', '1987' , 'Larry Wall'), ('Go/golang', '2007', 'Robert Griesemer, Rob Pike, and Ken Thompson')]
 #
 #	skal funksjonen produsere følgende ut-data:
 #
-#		C ble startet 1969 av Dennis Ritchie.
-#		C++ ble startet 1979 av Bjarne Stroustrup.
-#		Perl ble startet 1987 av Larry Wall.
-#		Python ble startet 1989 av Guido van Rossum.
-#		Java/Oak ble startet 1991 av James Gosling.
-#		Ruby ble startet 1991 av Yukihiro "Matz" Matsumoto.
-#		Go/golang ble startet 2007 av Robert Griesemer, Rob Pike, and Ken Thompson.
+#C ble startet 1969 av Dennis Ritchie.
+#C++ ble startet 1979 av Bjarne Stroustrup.
+#Perl ble startet 1987 av Larry Wall.
+#Python ble startet 1989 av Guido van Rossum.
+#Java/Oak ble startet 1991 av James Gosling.
+#Ruby ble startet 1991 av Yukihiro "Matz" Matsumoto.
+#Go/golang ble startet 2007 av Robert Griesemer, Rob Pike, and Ken Thompson.
 #			
-#def print_history(proglangs):
+
+def print_history(proglangs):
 	# Implementer funksjonen her
 
-#proglangs = [('Python', '1989', 'Guido van Rossum'), ('C', '1969', 'Dennis Ritchie'), ('Java/Oak', '1991', 'James Gosling'), ('C++', '1979', 'Bjarne Stroustrup'), ('Ruby', '1991', 'Yukihiro "Matz" Matsumoto'), ('Perl', '1987' , 'Larry Wall'), ('Go/golang', '2007', 'Robert Griesemer, Rob Pike, and Ken Thompson')]
+
+
 #print_history(proglangs)
 
 
