@@ -1,0 +1,29 @@
+Lab 4 - Begreper - TEO
+
+API
+API er et akronym for Application Programming Interface, det betegner et grensesnitt i en programvare slik at spesifikke deler av denne kan kjøres fra en annen programvare.
+
+IDE
+IDE er et akronym for Integrated Development Enviroment og er et program som gir omfattende muligheter til programmerere for programvare utvikling.
+
+ps
+PostScript er et programmeringsspråk som opprinnelig hadde til oppgave å gi instruksjoner til hvordan en side skal se ut ved utskrift fra en printer, men omfatter mye mer med tiden. Som dataspråk er det ikke mye brukt til å skape programmer av mennesker men av andre programmer. Men det er mulig å skrive programmer i PS som i alle andre dataspråk.
+
+top
+top er en oppgavebehandler for mange Unix-operativ system. Det produserer en liste med kjørende prossesser og lister de etter CPU bruk.
+
+df
+df er en forkortelse for Disk Free og er et standard Unix program som viser hvor mye fri diskplass for filsystemer bruker som setter i gang kommandoen har.
+
+kill
+kill er en kommando som blir brukt i mange populære operativsystem som en kommando for å stenge ned og “drepe” prossesser.
+
+netstat
+netstat er en forkortelse for network statistics og er et kommando linje verktøy som viser nettverk tilkoblinger (inngående og utgående), routing tables og nettverks protokoll statistikker.
+
+ifconfig
+ifconfig er en forkortelse for Interface configuration er et system administrasjons verktøy for Unix aktige operativsystem for å konfigurere, kontrollere og spørring av TCP/IP nettverk.
+
+who
+En kommando for Unix operativ system som viser hvilke brukere som er pålogget pc’en i øyeblikket kommandoen blir trykket inn.
+
