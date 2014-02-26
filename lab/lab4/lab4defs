@@ -7,7 +7,8 @@ IDE
 IDE er et akronym for Integrated Development Enviroment og er et program som gir omfattende muligheter til programmerere for programvare utvikling.
 
 ps
-PostScript er et programmeringsspråk som opprinnelig hadde til oppgave å gi instruksjoner til hvordan en side skal se ut ved utskrift fra en printer, men omfatter mye mer med tiden. Som dataspråk er det ikke mye brukt til å skape programmer av mennesker men av andre programmer. Men det er mulig å skrive programmer i PS som i alle andre dataspråk.
+PS viser informasjon om prosesser i terminalvinduet 
+
 
 top
 top er en oppgavebehandler for mange Unix-operativ system. Det produserer en liste med kjørende prossesser og lister de etter CPU bruk.
