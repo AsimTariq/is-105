@@ -10,9 +10,9 @@
 
 
 # Skriv inn fullt navn på gruppemedlemene (erstatte '-' med navn slikt 'Kari Trå')
-gruppe = {  'student1': '-', \
-			'student2': '-', \
-            'student3': '-', \
+gruppe = {  'student1': 'Erik Mikalsen', \
+			'student2': 'Oddvar Tengesdal', \
+            'student3': 'Tore Andre Halhjem', \
 }
 
 # Oppgave 
@@ -79,12 +79,17 @@ def hand_rank(hand):
 # Verdier for J, Q, K og A er tilsvarende 11, 12, 13, 14. 
 # En hånd TD TC TH 7C 7D skal returnere [10,10,10,7,7]
 def card_ranks(hand):
+
+    ranks = ['--23456789TJQKA'.index(r) for r, s in hand]
+    ranks.sort(reverse = True)
+    return [5, 4, 3, 2, 1] if (ranks == [14, 5, 4, 3, 2]) else ranks
 	# Oppgave 4: implementer funksjonen her og legg til testtilfeller i funksjonen test()
-	return None
+#	return None
 
 # Disse hjelpefunksjonene skal vi jobbe med videre i senere lab oppgaver.
 # Funksjonen straight(ranks) returner True hvis hånden er en Straight.
 def straight(ranks):
+        
 	return None
 
 # Funksjonen flush(hand) returnerer True hvis hånden er en Flush.
@@ -111,19 +116,25 @@ def test():
 	# Eksemplene er gitt, du må kommentere disse ut og sette på en verdi som ikke gir feil
 	lon1 = [6, 7, 8, 0]
 	lon2 = [6, 7, -9, 0]
-	#assert max(lov1) == 
-	#assert max(lov2, key=abs) == 
+	assert max(lon1) == 8
+	assert max(lon2, key=abs) == -9
 
 	sf = "6C 7C 8C 9C TC".split() # Straight Flush => ['6C', '7C', '8C', '9C', 'TC']
 	fk = "9D 9H 9S 9C 7D".split() # Four of a Kind
 	fh = "TD TC TH 7C 7D".split() # Full House
+	st = "2D 3C 4H 5D 6H".split() # Straight
+	tp = "2D 2H 5H 5D 9H".split() # Two pair
 	assert poker([sf, fk, fh]) == sf
 	# Oppgave 2 
 	# Skriv tre nye testtilfeller som sammenligner hender basert på eksemplet overfor
 	# 1) Four of Kind (fk) mot Full House (fh) skal returnere Four of Kind (fk)
-	# 2) Full House (fh) mot Full House (fh) skal returnere Full House (fh)
-	# 3) Straight (st) skal slå Two pair (tp) OBS! Du må selv lage eksempler på hender her
+	assert poker([fk, fh]) == fk 	
 	
+
+	# 2) Full House (fh) mot Full House (fh) skal returnere Full House (fh)
+	assert poker([fh, fh]) == fh
+	# 3) Straight (st) skal slå Two pair (tp) OBS! Du må selv lage eksempler på hender her
+	assert poker([st, tp]) == st
 
 	# Oppgave 3
 	# Skriv 2 nye testtilfeller:
@@ -132,23 +143,22 @@ def test():
 	# og det må da returnere Straight Flush (urealistisk med så mange spillere, men 
 	# vi tar høyde for det).
 	# Hva skjer hvis man har en tom liste som inn-data, dvs. ingen hender?
-	
+	assert poker ([st]) == st
+	assert poker ([sf,100*fh]) == sf
 
 	# Oppgave 4
 	# Implementer funksjonen card_rank(hand) og legg til tester for 
 	# sf, fk og fh variabler som er definert i denne testfunksjonen
-	# Du kan gjerne definere flere hender og legge til flere tester :)
+	# Du kan gjerne definere flere hender og legge til flere tester :)   
 
 
-    # 
-    # Funksjonen hard_rank er ennå ikke implementert
-	# Her er gitt noen eksempler på testing av denne funksjonen som man kan bruke på et senere tidspunkt
+
+# Funksjonen hard_rank er ennå ikke implementert	# Her er gitt noen eksempler på testing av denne funksjonen som man kan bruke på et senere tidspunkt
     #
-	#assert hand_rank(sf) == (8,10)
-	#assert hand_rank(fk) == (7,9,7)
-	#assert hand_rank(fh) == (6,10,7)
-	return "Done testing"
-
-print test()
+#	assert hand_rank(sf) == (8,10)
+#	assert hand_rank(fk) == (7,9,7)
+#	assert hand_rank(fh) == (6,10,7)
+#    	    return "Done testing"
+# print test()
 
 
