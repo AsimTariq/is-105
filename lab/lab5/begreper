@@ -1,0 +1,14 @@
+python <filnavn>.py - Denne kommandoen kjører skriptet inne i filen du oppgir.
+
+javac <filnavn>.java - Denne kommandoen compilerer en java source fil og gjør den om til en kompilert java klasse.
+
+java <filnavn>.class - Denne kommandoen kjører den ferdig kompilerte filen fra kommandoen ovenfor.
+
+gcc -o <filnavn> <filnavn Denne kommandoen kompilerer programmer som er kjørt i c-språkene.
+
+sleep 100 & (utført fra kommandolinje) - Får programmet til å sove i en angitt tidsperiode.
+
+cat /proc/cpuinfo - Denne kommandoen får fram en liste med masse forskjellig innhold om de forskjellige kjernene i CPU’en din. Den viser hastighet, modell, nummer osv.
+
+
+
