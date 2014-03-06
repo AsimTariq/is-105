@@ -158,7 +158,9 @@ def test():
 #	assert hand_rank(sf) == (8,10)
 #	assert hand_rank(fk) == (7,9,7)
 #	assert hand_rank(fh) == (6,10,7)
-#    	    return "Done testing"
-# print test()
+print test()
+
+#return "Done testing"
+
 
 
